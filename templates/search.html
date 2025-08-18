@@ -93,7 +93,7 @@
     <main class="search-results">
         <div class="container-fluid">
             <div class="results-info">
-                About {{ "{:,}".format(total_results) }} results (0.{{ range(10, 99) | random }} seconds)
+                About {{ "{:,}".format(total_results) }} results ({{ search_time }} seconds)
             </div>
             
             {% if results %}
