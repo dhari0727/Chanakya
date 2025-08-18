@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Python Programming Language - Official Website",
+        "url": "https://www.python.org",
+        "domain": "www.python.org",
+        "snippet": "The official home of the Python Programming Language. Python is a programming language that lets you work quickly and integrate systems more effectively."
+    },
+    {
+        "title": "Learn Python - Free Interactive Python Tutorial",
+        "url": "https://www.learnpython.org",
+        "domain": "www.learnpython.org",
+        "snippet": "Learn Python, one of today's most in-demand programming languages on-the-go! Practice writing Python code, collect points, & show off your skills now."
+    },
+    {
+        "title": "Python Tutorial - W3Schools",
+        "url": "https://www.w3schools.com/python/",
+        "domain": "www.w3schools.com",
+        "snippet": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more."
+    },
+    {
+        "title": "Flask - Web Development with Python",
+        "url": "https://flask.palletsprojects.com",
+        "domain": "flask.palletsprojects.com",
+        "snippet": "Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications."
+    },
+    {
+        "title": "Django - The Web Framework for Perfectionists with Deadlines",
+        "url": "https://www.djangoproject.com",
+        "domain": "www.djangoproject.com",
+        "snippet": "Django makes it easier to build better web apps more quickly and with less code. Get started with Django."
+    },
+    {
+        "title": "JavaScript - MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "domain": "developer.mozilla.org",
+        "snippet": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions."
+    },
+    {
+        "title": "React - A JavaScript Library for Building User Interfaces",
+        "url": "https://reactjs.org",
+        "domain": "reactjs.org",
+        "snippet": "A JavaScript library for building user interfaces. React makes it painless to create interactive UIs."
+    },
+    {
+        "title": "Node.js - JavaScript Runtime",
+        "url": "https://nodejs.org",
+        "domain": "nodejs.org",
+        "snippet": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model."
+    },
+    {
+        "title": "GitHub - Where the World Builds Software",
+        "url": "https://github.com",
+        "domain": "github.com",
+        "snippet": "GitHub is where over 100 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories."
+    },
+    {
+        "title": "Stack Overflow - Where Developers Learn, Share, & Build Careers",
+        "url": "https://stackoverflow.com",
+        "domain": "stackoverflow.com",
+        "snippet": "Stack Overflow is the largest, most trusted online community for developers to learn, share​ ​their programming ​knowledge, and build their careers."
+    },
+    {
+        "title": "Bootstrap - The Most Popular HTML, CSS, and JS Library",
+        "url": "https://getbootstrap.com",
+        "domain": "getbootstrap.com",
+        "snippet": "Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit."
+    },
+    {
+        "title": "jQuery - Write Less, Do More",
+        "url": "https://jquery.com",
+        "domain": "jquery.com",
+        "snippet": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation much simpler."
+    },
+    {
+        "title": "CSS-Tricks - Tips, Tricks, and Techniques on CSS",
+        "url": "https://css-tricks.com",
+        "domain": "css-tricks.com",
+        "snippet": "Daily articles about CSS, HTML, JavaScript, and all things related to web design and development."
+    },
+    {
+        "title": "Codecademy - Learn to Code",
+        "url": "https://www.codecademy.com",
+        "domain": "www.codecademy.com",
+        "snippet": "Learn the technical skills to get the job you want. Join over 50 million people choosing Codecademy to start a new career (or advance in their current one)."
+    },
+    {
+        "title": "freeCodeCamp - Learn Coding for Free",
+        "url": "https://www.freecodecamp.org",
+        "domain": "www.freecodecamp.org",
+        "snippet": "Learn to code for free. Build projects. Earn certifications. Since 2014, more than 400,000 people have gotten developer jobs after completing this."
+    },
+    {
+        "title": "Coursera - Online Courses & Credentials",
+        "url": "https://www.coursera.org",
+        "domain": "www.coursera.org",
+        "snippet": "Join Coursera for free and learn online. Build skills with courses from top universities like Yale, Michigan, Stanford, and leading companies like Google and IBM."
+    },
+    {
+        "title": "edX - Free Online Courses by Harvard, MIT, & More",
+        "url": "https://www.edx.org",
+        "domain": "www.edx.org",
+        "snippet": "Access 2000 free online courses from 140 leading institutions worldwide. Gain new skills and earn a certificate of completion."
+    },
+    {
+        "title": "LinkedIn Learning - Online Training Courses",
+        "url": "https://www.linkedin.com/learning",
+        "domain": "www.linkedin.com",
+        "snippet": "Learn business, creative, and technology skills to achieve your personal and professional goals."
+    },
+    {
+        "title": "Udemy - Online Courses - Learn Anything",
+        "url": "https://www.udemy.com",
+        "domain": "www.udemy.com",
+        "snippet": "Udemy is an online learning and teaching marketplace with over 213,000 courses and 57 million students."
+    },
+    {
+        "title": "Medium - Where Good Ideas Find You",
+        "url": "https://medium.com",
+        "domain": "medium.com",
+        "snippet": "Medium is an open platform where readers find dynamic thinking, and where expert and undiscovered voices can share their writing on any topic."
+    },
+    {
+        "title": "DEV Community - A Constructive Community for Developers",
+        "url": "https://dev.to",
+        "domain": "dev.to",
+        "snippet": "A constructive and inclusive social network for software developers. With you every step of your journey."
+    },
+    {
+        "title": "Hacker News - Y Combinator",
+        "url": "https://news.ycombinator.com",
+        "domain": "news.ycombinator.com",
+        "snippet": "Hacker News is a social news website focusing on computer science and entrepreneurship."
+    },
+    {
+        "title": "Reddit - Dive into Anything",
+        "url": "https://www.reddit.com",
+        "domain": "www.reddit.com",
+        "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions."
+    },
+    {
+        "title": "AWS - Amazon Web Services",
+        "url": "https://aws.amazon.com",
+        "domain": "aws.amazon.com",
+        "snippet": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services."
+    },
+    {
+        "title": "Google Cloud Platform",
+        "url": "https://cloud.google.com",
+        "domain": "cloud.google.com",
+        "snippet": "Meet your business challenges head on with cloud computing services from Google, including data management, hybrid & multi-cloud, and AI & ML."
+    },
+    {
+        "title": "Microsoft Azure - Cloud Computing Services",
+        "url": "https://azure.microsoft.com",
+        "domain": "azure.microsoft.com",
+        "snippet": "Invent with purpose, realize cost savings, and make your organization more efficient with Microsoft Azure's open and flexible cloud computing platform."
+    },
+    {
+        "title": "Docker - Build, Ship, and Run Any App, Anywhere",
+        "url": "https://www.docker.com",
+        "domain": "www.docker.com",
+        "snippet": "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers."
+    },
+    {
+        "title": "Kubernetes - Production-Grade Container Orchestration",
+        "url": "https://kubernetes.io",
+        "domain": "kubernetes.io",
+        "snippet": "Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications."
+    },
+    {
+        "title": "Git - Free and Open Source Distributed Version Control",
+        "url": "https://git-scm.com",
+        "domain": "git-scm.com",
+        "snippet": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects."
+    },
+    {
+        "title": "Visual Studio Code - Code Editing. Redefined.",
+        "url": "https://code.visualstudio.com",
+        "domain": "code.visualstudio.com",
+        "snippet": "Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux."
+    }
+]
