@@ -19,10 +19,17 @@ logging.basicConfig(level=logging.DEBUG)
 from flask import Flask, request, redirect, render_template, url_for
 import sqlite3, urllib.parse
 
-# Create Flask app
+# Cload_dotenv()
+
 app = Flask(__name__)
+
+# API key from environment
 SERPER_API_KEY = os.getenv("SERPER_API_KEY")
+
+# Secret key (Render: SESSION_SECRET, Local: fallback to dev-secret-key)
 app.secret_key = os.environ.get("SESSION_SECRET", "dev-secret-key")
+
+# Serper API URL
 SERPER_URL = "https://google.serper.dev/search"
 # Search engine configuration
 USER_AGENTS = [
