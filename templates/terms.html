@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Chanakya Search Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sanskrit-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        .body-font { font-family: 'Source Sans Pro', sans-serif; }
+    </style>
+</head>
+<body class="h-full sanskrit-bg body-font">
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-sm border-b border-amber-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-sm"></i>
+                    </div>
+                    <a href="index.html" class="logo-font text-2xl font-bold text-amber-600">Chanakya</a>
+                </div>
+                <nav class="flex space-x-6">
+                    <a href={{ url_for('index') }} class="text-gray-600 hover:text-amber-600 transition-colors">Home</a>
+                    <a href={{ url_for('about') }} class="text-gray-600 hover:text-amber-600 transition-colors">About</a>
+                    <a href={{ url_for('privacy') }} class="text-amber-600 font-semibold">Privacy</a>
+                    <a href={{ url_for('terms') }} class="text-gray-600 hover:text-amber-600 transition-colors">Terms</a>
+                    <a href={{ url_for('contact') }} class="text-gray-600 hover:text-amber-600 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-8 border border-amber-100 shadow-sm">
+            <div class="text-center mb-12">
+                <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-scroll text-white text-2xl"></i>
+                </div>
+                <h1 class="logo-font text-4xl font-bold text-gray-900 mb-4">Terms of Service</h1>
+                <p class="text-xl text-gray-600">Guidelines for Righteous Use</p>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-sm text-gray-500 mb-8">Last updated: December 2024</p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Welcome to Chanakya</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    These Terms of Service ("Terms") govern your use of the Chanakya Search Engine. By accessing or using our service, 
+                    you agree to be bound by these Terms. Our service is built upon the principles of Dharma (righteousness) and 
+                    Satya (truth), and we expect all users to uphold these values.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Acceptable Use</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">You agree to use Chanakya Search Engine in accordance with these principles:</p>
+                
+                <div class="bg-amber-50 p-6 rounded-lg border border-amber-200 mb-6">
+                    <h3 class="font-semibold text-gray-900 mb-3">Dharmic Conduct</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Use the service for legitimate and lawful purposes</li>
+                        <li>• Respect the intellectual property rights of others</li>
+                        <li>• Maintain truthfulness in your interactions</li>
+                        <li>• Show respect for all users and communities</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">Prohibited Activities</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">You may not use our service to:</p>
+                <ul class="space-y-2 text-gray-700 mb-6">
+                    <li>• Search for or distribute illegal, harmful, or malicious content</li>
+                    <li>• Attempt to circumvent our security measures</li>
+                    <li>• Engage in automated scraping or data harvesting</li>
+                    <li>• Violate the privacy or rights of others</li>
+                    <li>• Spread misinformation or false content</li>
+                </ul>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Service Availability</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We strive to maintain continuous service availability, but like the cycles of nature, there may be times when 
+                    our service is temporarily unavailable due to maintenance, updates, or unforeseen circumstances. We will make 
+                    reasonable efforts to minimize any disruptions.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Intellectual Property</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    The Chanakya Search Engine, including its design, algorithms, and content, is protected by intellectual property laws. 
+                    While we provide access to information from across the web, we respect the rights of content creators and expect 
+                    our users to do the same.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Limitation of Liability</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Chanakya Search Engine provides search results from various sources across the internet. While we strive for accuracy 
+                    and relevance, we cannot guarantee the completeness, accuracy, or reliability of search results. Users should verify 
+                    information from multiple sources before making important decisions.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Privacy and Data</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Your privacy is sacred to us. Please review our Privacy Policy to understand how we collect, use, and protect 
+                    your information. By using our service, you consent to our privacy practices as outlined in our Privacy Policy.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Modifications to Terms</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We may update these Terms from time to time to reflect changes in our service or legal requirements. 
+                    We will notify users of significant changes through our website. Continued use of the service after 
+                    changes constitutes acceptance of the new Terms.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Termination</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We reserve the right to suspend or terminate access to our service for users who violate these Terms or 
+                    engage in activities that harm our service or other users. Users may discontinue use of the service at any time.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Governing Law</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    These Terms are governed by applicable laws and regulations. Any disputes will be resolved through appropriate 
+                    legal channels, with preference for mediation and peaceful resolution in the spirit of ancient wisdom.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Contact Information</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    If you have questions about these Terms of Service, please contact us at 
+                    <a href="mailto:legal@chanakya-search.com" class="text-amber-600 hover:underline">legal@chanakya-search.com</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/90 backdrop-blur-sm border-t border-amber-100 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-xs"></i>
+                    </div>
+                    <span class="logo-font text-lg font-bold text-amber-600">Chanakya</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="about.html" class="text-gray-600 hover:text-amber-600 transition-colors">About</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-amber-600 transition-colors">Privacy</a>
+                    <a href="terms.html" class="text-amber-600 font-semibold">Terms</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-amber-600 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-amber-100 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Chanakya Search. Bridging ancient wisdom with modern knowledge.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

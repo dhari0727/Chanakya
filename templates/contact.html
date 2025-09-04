@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chanakya Search Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sanskrit-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        .body-font { font-family: 'Source Sans Pro', sans-serif; }
+    </style>
+</head>
+<body class="h-full sanskrit-bg body-font">
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-sm border-b border-amber-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-sm"></i>
+                    </div>
+                    <a href="index.html" class="logo-font text-2xl font-bold text-amber-600">Chanakya</a>
+                </div>
+                <nav class="flex space-x-6">
+                   <a href={{ url_for('index') }} class="text-gray-600 hover:text-amber-600 transition-colors">Home</a>
+                    <a href={{ url_for('about') }} class="text-gray-600 hover:text-amber-600 transition-colors">About</a>
+                    <a href={{ url_for('privacy') }} class="text-amber-600 font-semibold">Privacy</a>
+                    <a href={{ url_for('terms') }} class="text-gray-600 hover:text-amber-600 transition-colors">Terms</a>
+                    <a href={{ url_for('contact') }} class="text-gray-600 hover:text-amber-600 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-8 border border-amber-100 shadow-sm">
+            <div class="text-center mb-12">
+                <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-envelope text-white text-2xl"></i>
+                </div>
+                <h1 class="logo-font text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+                <p class="text-xl text-gray-600">We Welcome Your Wisdom and Feedback</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="logo-font text-2xl font-bold text-amber-600 mb-6">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent bg-amber-50/50">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent bg-amber-50/50">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <select id="subject" name="subject" required
+                                    class="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent bg-amber-50/50">
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="privacy">Privacy Concerns</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                      class="w-full px-4 py-3 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent bg-amber-50/50"
+                                      placeholder="Share your thoughts, questions, or feedback with us..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-amber-600 text-white py-3 px-6 rounded-lg hover:bg-amber-700 transition-colors font-semibold">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="logo-font text-2xl font-bold text-amber-600 mb-6">Get in Touch</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-amber-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Email Us</h3>
+                                <p class="text-gray-600">contact@chanakya-search.com</p>
+                                <p class="text-sm text-gray-500">We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-shield-alt text-amber-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Privacy & Security</h3>
+                                <p class="text-gray-600">privacy@chanakya-search.com</p>
+                                <p class="text-sm text-gray-500">For privacy-related inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-handshake text-amber-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Partnerships</h3>
+                                <p class="text-gray-600">partnerships@chanakya-search.com</p>
+                                <p class="text-sm text-gray-500">Collaboration opportunities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bug text-amber-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Technical Support</h3>
+                                <p class="text-gray-600">support@chanakya-search.com</p>
+                                <p class="text-sm text-gray-500">Bug reports and technical issues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Philosophy Quote -->
+                    <div class="mt-8 p-6 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-200">
+                        <blockquote class="text-gray-700 italic text-center">
+                            <p class="mb-3">"A person should not be too honest. Straight trees are cut first and honest people are screwed first."</p>
+                            <footer class="text-sm text-amber-600 font-semibold">— Chanakya</footer>
+                        </blockquote>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="mt-6 p-4 bg-amber-50 rounded-lg border border-amber-200">
+                        <h3 class="font-semibold text-gray-900 mb-2">Our Commitment</h3>
+                        <p class="text-sm text-gray-700">
+                            We value every message and strive to respond thoughtfully. Most inquiries receive a response within 24 hours, 
+                            though complex technical matters may require additional time for proper investigation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/90 backdrop-blur-sm border-t border-amber-100 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-xs"></i>
+                    </div>
+                    <span class="logo-font text-lg font-bold text-amber-600">Chanakya</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="about.html" class="text-gray-600 hover:text-amber-600 transition-colors">About</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-amber-600 transition-colors">Privacy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-amber-600 transition-colors">Terms</a>
+                    <a href="contact.html" class="text-amber-600 font-semibold">Contact</a>
+                </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-amber-100 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Chanakya Search. Bridging ancient wisdom with modern knowledge.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

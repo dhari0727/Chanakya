@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Chanakya Search Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sanskrit-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        .body-font { font-family: 'Source Sans Pro', sans-serif; }
+    </style>
+</head>
+<body class="h-full sanskrit-bg body-font">
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-sm border-b border-amber-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-sm"></i>
+                    </div>
+                    <a href="index.html" class="logo-font text-2xl font-bold text-amber-600">Chanakya</a>
+                </div>
+                <nav class="flex space-x-6">
+                    <a href={{ url_for('index') }} class="text-gray-600 hover:text-amber-600 transition-colors">Home</a>
+                    <a href={{ url_for('about') }} class="text-gray-600 hover:text-amber-600 transition-colors">About</a>
+                    <a href={{ url_for('privacy') }} class="text-amber-600 font-semibold">Privacy</a>
+                    <a href={{ url_for('terms') }} class="text-gray-600 hover:text-amber-600 transition-colors">Terms</a>
+                    <a href={{ url_for('contact') }} class="text-gray-600 hover:text-amber-600 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-8 border border-amber-100 shadow-sm">
+            <div class="text-center mb-12">
+                <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-shield-alt text-white text-2xl"></i>
+                </div>
+                <h1 class="logo-font text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+                <p class="text-xl text-gray-600">Your Privacy is Sacred to Us</p>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-sm text-gray-500 mb-8">Last updated: December 2024</p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Our Commitment to Privacy</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    At Chanakya Search Engine, we believe that privacy is a fundamental right. Inspired by the ancient principle of 
+                    "Guhya Vidya" (sacred knowledge), we treat your personal information with the utmost respect and protection. 
+                    This Privacy Policy explains how we collect, use, and safeguard your information when you use our search engine.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Information We Collect</h2>
+                
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">Search Queries</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We collect the search terms you enter to provide relevant results and improve our search algorithms. 
+                    Search queries are anonymized after 90 days and used only for service improvement.
+                </p>
+
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">Technical Information</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We automatically collect certain technical information including your IP address, browser type, 
+                    device information, and usage patterns. This helps us maintain and improve our service quality.
+                </p>
+
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">Cookies and Tracking</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We use minimal cookies to enhance your experience, such as remembering your search preferences. 
+                    You can control cookie settings through your browser.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">How We Use Your Information</h2>
+                <ul class="space-y-3 text-gray-700 mb-6">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span>Provide accurate and relevant search results</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span>Improve our search algorithms and user experience</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span>Prevent fraud and maintain service security</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span>Comply with legal obligations when required</span>
+                    </li>
+                </ul>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Data Protection Principles</h2>
+                <div class="bg-amber-50 p-6 rounded-lg border border-amber-200 mb-6">
+                    <h3 class="font-semibold text-gray-900 mb-3">Minimization</h3>
+                    <p class="text-gray-700 mb-4">We collect only the data necessary to provide our search service effectively.</p>
+                    
+                    <h3 class="font-semibold text-gray-900 mb-3">Anonymization</h3>
+                    <p class="text-gray-700 mb-4">Personal identifiers are removed from search data after a short retention period.</p>
+                    
+                    <h3 class="font-semibold text-gray-900 mb-3">Encryption</h3>
+                    <p class="text-gray-700">All data transmission and storage uses industry-standard encryption protocols.</p>
+                </div>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Your Rights</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">You have the right to:</p>
+                <ul class="space-y-2 text-gray-700 mb-6">
+                    <li>• Access your personal data</li>
+                    <li>• Request correction of inaccurate data</li>
+                    <li>• Request deletion of your data</li>
+                    <li>• Object to data processing</li>
+                    <li>• Data portability</li>
+                </ul>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Third-Party Services</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We may use trusted third-party services for analytics and infrastructure. These partners are bound by 
+                    strict data protection agreements and cannot use your data for their own purposes.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Contact Us</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    If you have any questions about this Privacy Policy or wish to exercise your rights, 
+                    please contact our Privacy Team at <a href="mailto:privacy@chanakya-search.com" class="text-amber-600 hover:underline">privacy@chanakya-search.com</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/90 backdrop-blur-sm border-t border-amber-100 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-xs"></i>
+                    </div>
+                    <span class="logo-font text-lg font-bold text-amber-600">Chanakya</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="about.html" class="text-gray-600 hover:text-amber-600 transition-colors">About</a>
+                    <a href="privacy.html" class="text-amber-600 font-semibold">Privacy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-amber-600 transition-colors">Terms</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-amber-600 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-amber-100 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Chanakya Search. Bridging ancient wisdom with modern knowledge.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

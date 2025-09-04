@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Chanakya Search Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sanskrit-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        .body-font { font-family: 'Source Sans Pro', sans-serif; }
+    </style>
+</head>
+<body class="h-full sanskrit-bg body-font">
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-sm border-b border-amber-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-sm"></i>
+                    </div>
+                    <a href="index.html" class="logo-font text-2xl font-bold text-amber-600">Chanakya</a>
+                </div>
+                <nav class="flex space-x-6">
+                    <a href={{ url_for('index') }} class="text-gray-600 hover:text-amber-600 transition-colors">Home</a>
+                    <a href={{ url_for('about') }} class="text-gray-600 hover:text-amber-600 transition-colors">About</a>
+                    <a href={{ url_for('privacy') }} class="text-amber-600 font-semibold">Privacy</a>
+                    <a href={{ url_for('terms') }} class="text-gray-600 hover:text-amber-600 transition-colors">Terms</a>
+                    <a href={{ url_for('contact') }} class="text-gray-600 hover:text-amber-600 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-8 border border-amber-100 shadow-sm">
+            <div class="text-center mb-12">
+                <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-om text-white text-2xl"></i>
+                </div>
+                <h1 class="logo-font text-4xl font-bold text-gray-900 mb-4">About Chanakya</h1>
+                <p class="text-xl text-gray-600">Ancient Wisdom Meets Modern Search</p>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Our Mission</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Chanakya Search Engine is inspired by the ancient Indian philosopher and strategist Chanakya (also known as Kautilya), 
+                    who authored the Arthashastra and served as the chief advisor to Emperor Chandragupta Maurya. Just as Chanakya sought 
+                    to organize and systematize knowledge for effective governance and decision-making, our search engine aims to organize 
+                    the world's information with wisdom and discernment.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Our Philosophy</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We believe that true search goes beyond mere information retrieval. It requires the wisdom to discern valuable knowledge 
+                    from noise, the intelligence to understand context, and the insight to present information that truly serves the seeker's 
+                    needs. Our platform integrates principles of ancient Indian philosophy with cutting-edge technology to deliver search 
+                    results that are not just relevant, but meaningful.
+                </p>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Key Features</h2>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-shield-alt text-amber-600 text-xl mr-3"></i>
+                            <h3 class="font-semibold text-gray-900">Verified Sources</h3>
+                        </div>
+                        <p class="text-gray-700">Our verification system ensures that you receive information from trusted and authoritative sources.</p>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-brain text-amber-600 text-xl mr-3"></i>
+                            <h3 class="font-semibold text-gray-900">Intelligent Results</h3>
+                        </div>
+                        <p class="text-gray-700">Advanced algorithms that understand context and intent to deliver truly relevant results.</p>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-leaf text-amber-600 text-xl mr-3"></i>
+                            <h3 class="font-semibold text-gray-900">Sustainable Technology</h3>
+                        </div>
+                        <p class="text-gray-700">Built with environmental consciousness and sustainable practices at its core.</p>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg border border-amber-200">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-amber-600 text-xl mr-3"></i>
+                            <h3 class="font-semibold text-gray-900">Community-Driven</h3>
+                        </div>
+                        <p class="text-gray-700">Powered by a community of knowledge seekers and wisdom sharers from around the world.</p>
+                    </div>
+                </div>
+
+                <h2 class="logo-font text-2xl font-bold text-amber-600 mb-4">Our Values</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span><strong>Dharma (Righteousness):</strong> We are committed to ethical practices and responsible information sharing.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span><strong>Satya (Truth):</strong> We prioritize accuracy and authenticity in all search results.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span><strong>Ahimsa (Non-violence):</strong> We promote peaceful discourse and reject harmful content.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                        <span><strong>Seva (Service):</strong> We exist to serve the global community's quest for knowledge and wisdom.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/90 backdrop-blur-sm border-t border-amber-100 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-xs"></i>
+                    </div>
+                    <span class="logo-font text-lg font-bold text-amber-600">Chanakya</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="about.html" class="text-amber-600 font-semibold">About</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-amber-600 transition-colors">Privacy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-amber-600 transition-colors">Terms</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-amber-600 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-amber-100 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Chanakya Search. Bridging ancient wisdom with modern knowledge.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
