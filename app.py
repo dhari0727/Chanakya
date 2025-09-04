@@ -9,8 +9,7 @@ from urllib.parse import urljoin, urlparse, quote
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 import trafilatura
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
-load_dotenv()
+
 from urllib.parse import urlparse
 import sqlite3
 from flask import request
